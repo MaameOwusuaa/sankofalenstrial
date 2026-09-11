@@ -1,0 +1,460 @@
+.passport {
+    display:grid;
+    grid-template-columns:1fr .6fr;
+    gap:40px;
+    align-items:center
+}
+
+.passport-card {
+    background:var(--navy);
+    color:#fff;
+    padding:30px;
+    border-radius:18px;
+    text-align:center
+}
+
+.passport-card strong {
+    font-size:4rem;
+    display:block
+}
+
+.passport-card span {
+    color:#a8c9cf
+}
+
+.passport-card div {
+    margin-top:20px;
+    color:#cde2e5
+}
+
+/* Passport Page Styles */
+.passport-hero {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--gold) 100%);
+    color: white;
+    padding: 60px 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.passport-hero-content span {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.passport-hero-content h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.passport-hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.auth-required-message {
+    display: none;
+}
+
+.auth-message-card {
+    background: white;
+    border-radius: 18px;
+    padding: 60px 40px;
+    text-align: center;
+    max-width: 500px;
+    margin: 60px auto;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.auth-message-card h2 {
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.auth-message-card p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.auth-message-card .actions {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.passport-content {
+    display: none;
+}
+
+/* Visitor Section */
+.visitor-section {
+    background: white;
+    border-radius: 18px;
+    padding: 40px;
+    margin: 40px 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.visitor-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.visitor-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.visitor-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--navy), var(--gold));
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.visitor-details h2 {
+    margin: 0 0 8px 0;
+    color: var(--navy);
+}
+
+.visitor-details p {
+    margin: 0;
+    color: #666;
+}
+
+.visitor-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #f5f7fa, #e8ecf1);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border-left: 4px solid var(--navy);
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--navy);
+}
+
+.stat-label {
+    color: #666;
+    margin-top: 8px;
+    font-size: 0.95rem;
+}
+
+/* Badges Section */
+.badges-section,
+.recent-stamps-section,
+.places-in-passport-section {
+    margin: 60px 0;
+}
+
+.section-head {
+    margin-bottom: 30px;
+}
+
+.section-head h2 {
+    color: var(--navy);
+    margin: 0 0 8px 0;
+}
+
+.section-head p {
+    color: #999;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.badges-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.badge-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #f0f0f0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.badge-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.badge-icon {
+    font-size: 3rem;
+    margin-bottom: 12px;
+}
+
+.badge-info h3 {
+    color: var(--navy);
+    margin: 0 0 8px 0;
+}
+
+.badge-info p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0 0 8px 0;
+}
+
+.badge-info small {
+    color: #999;
+    font-size: 0.85rem;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+    background: #f9f9f9;
+    border-radius: 12px;
+}
+
+/* Recent Stamps Section */
+.stamps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.stamp-item {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.stamp-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.stamp-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+    flex-shrink: 0;
+    background: #f0f0f0;
+}
+
+.stamp-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.stamp-image .no-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background: #e8e8e8;
+}
+
+.stamp-details {
+    flex: 1;
+}
+
+.stamp-details h3 {
+    color: var(--navy);
+    margin: 0 0 8px 0;
+}
+
+.stamp-region {
+    color: #666;
+    margin: 0 0 8px 0;
+    font-size: 0.95rem;
+}
+
+.stamp-date {
+    color: #999;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Places Section */
+.places-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.place-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.place-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.place-image {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.place-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.place-card:hover .place-image img {
+    transform: scale(1.05);
+}
+
+.place-image .no-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background: #e8e8e8;
+}
+
+.place-content {
+    padding: 20px;
+}
+
+.place-content h3 {
+    color: var(--navy);
+    margin: 0 0 8px 0;
+}
+
+.place-category {
+    color: var(--gold);
+    font-size: 0.9rem;
+    margin: 0 0 12px 0;
+    font-weight: 600;
+}
+
+.place-description {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0 0 12px 0;
+}
+
+.place-region {
+    color: #888;
+    font-size: 0.9rem;
+    margin: 0 0 8px 0;
+}
+
+.place-visited {
+    color: #999;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Heritage CTA Section */
+.heritage-cta-section {
+    margin: 80px 0 40px 0;
+}
+
+.cta-card {
+    background: linear-gradient(135deg, var(--navy), var(--gold));
+    color: white;
+    padding: 60px 40px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.cta-content h2 {
+    margin: 0 0 12px 0;
+    font-size: 2rem;
+}
+
+.cta-content p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-card .btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .passport-hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .visitor-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .visitor-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .badges-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .stamp-item {
+        flex-direction: column;
+    }
+    
+    .cta-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .cta-content h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .visitor-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .places-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .auth-message-card .actions {
+        flex-direction: column;
+    }
+    
+    .passport-hero {
+        padding: 40px 20px;
+    }
+}

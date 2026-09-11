@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Your Cultural Passport | SankofaLens</title>
+        <link rel="stylesheet" href="/static/css/variables.css">
+        <link rel="stylesheet" href="/static/css/base.css">
+        <link rel="stylesheet" href="/static/css/navbar.css">
+        <link rel="stylesheet" href="/static/css/passport.css">
+        <link rel="stylesheet" href="/static/css/footer.css">
+        <link rel="stylesheet" href="/static/css/responsive.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <a class="brand" href="/">
+                <img src="https://summit.thehacsa.org/logo.png" alt="HACSA Foundation logo">
+                <span>
+                    <b>SANKOFALENS</b>
+                    <small>See the past. Understand the story. Experience the culture.</small>
+                </span>
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="/passport.html" class="active">Passport</a>
+                <a href="/#guide">Naa</a>
+                <a href="/frontend/login.html" id="authLink">Login</a>
+            </nav>
+        </header>
+        <main>
+            <section class="passport-hero">
+                <div class="passport-hero-content">
+                    <span class="eyebrow">CULTURAL PASSPORT</span>
+                    <h1>Your Heritage Journey</h1>
+                    <p>Collect stories, not just stamps. Track your exploration across Ghana's cultural heritage sites.</p>
+                </div>
+            </section>
+
+            <div id="auth-required" class="auth-required-message" style="display: none;">
+                <div class="auth-message-card">
+                    <h2>Sign in to view your passport</h2>
+                    <p>Create an account or log in to start collecting stamps and badges.</p>
+                    <div class="actions">
+                        <a href="/login.html" class="btn primary">Sign In</a>
+                        <a href="/register.html" class="btn ghost">Create Account</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="passport-content" class="passport-content" style="display: none;">
+                <!-- Visitor Info Section -->
+                <section class="visitor-section">
+                    <div class="visitor-info">
+                        <div class="visitor-header">
+                            <div class="visitor-avatar">
+                                <span id="visitor-initials">--</span>
+                            </div>
+                            <div class="visitor-details">
+                                <h2 id="visitor-name">Your Name</h2>
+                                <p id="visitor-email">your.email@example.com</p>
+                            </div>
+                        </div>
+                        <div class="visitor-stats">
+                            <div class="stat-card">
+                                <div class="stat-value" id="total-stamps">0</div>
+                                <div class="stat-label">Total Stamps</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value" id="sites-visited">0</div>
+                                <div class="stat-label">Sites Visited</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-value" id="badges-earned">0</div>
+                                <div class="stat-label">Badges Earned</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Badges Section -->
+                <section class="badges-section">
+                    <div class="section-head">
+                        <h2>Badges Earned</h2>
+                        <p>Unlock badges by visiting heritage sites and completing challenges</p>
+                    </div>
+                    <div id="badges-container" class="badges-grid">
+                        <div class="empty-state">No badges yet. Start exploring!</div>
+                    </div>
+                </section>
+
+                <!-- Recent Stamps Section -->
+                <section class="recent-stamps-section">
+                    <div class="section-head">
+                        <h2>Recent Stamps</h2>
+                        <p>Your latest heritage site visits</p>
+                    </div>
+                    <div id="recent-stamps-container" class="stamps-list">
+                        <div class="empty-state">No stamps yet. Visit a heritage site to get started!</div>
+                    </div>
+                </section>
+
+                <!-- Places in Passport Section -->
+                <section class="places-in-passport-section">
+                    <div class="section-head">
+                        <h2>Places in Your Passport</h2>
+                        <p>All heritage sites you've visited</p>
+                    </div>
+                    <div id="places-container" class="places-grid">
+                        <div class="empty-state">No visits yet. Explore heritage sites to add them to your passport!</div>
+                    </div>
+                </section>
+
+                <!-- Heritage Exploration CTA -->
+                <section class="heritage-cta-section">
+                    <div class="cta-card">
+                        <div class="cta-content">
+                            <h2>Continue Your Heritage Exploration</h2>
+                            <p>Discover more cultural sites and expand your passport collection.</p>
+                        </div>
+                        <a href="/#discover" class="btn primary">Explore More Sites</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <b>SANKOFALENS</b>
+                <p>See the past. Understand the story. Experience the culture.</p>
+            </div>
+            <div>
+                <b>HACSA@10</b>
+                <p>Heritage & Cultural Society of Africa</p>
+                <a href="https://www.thehacsa.org/" target="_blank">Official HACSA website</a>
+            </div>
+            <div>
+                <b>Platform</b>
+                <p>Heritage • Tourism • Education • Innovation</p>
+                <a href="/login.html">Sign in</a>
+            </div>
+            <div class="footer-bottom">© 2026 SankofaLens. Hackathon prototype. Built with HTML, CSS, JavaScript, FastAPI and MySQL.</div>
+        </footer>
+        <script src="/static/js/api.js"></script>
+        <script src="/static/js/navbar.js"></script>
+        <script src="/static/js/passport-page.js"></script>
+    </body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <title>SankofaLens | Heritage & Tourism</title>
+            <link rel="stylesheet" href="/static/css/variables.css">
+            <link rel="stylesheet" href="/static/css/base.css">
+            <link rel="stylesheet" href="/static/css/navbar.css">
+            <link rel="stylesheet" href="/static/css/hero.css">
+            <link rel="stylesheet" href="/static/css/heritage.css">
+            <link rel="stylesheet" href="/static/css/map.css">
+            <link rel="stylesheet" href="/static/css/guide.css">
+            <link rel="stylesheet" href="/static/css/passport.css">
+            <link rel="stylesheet" href="/static/css/auth.css">
+            <link rel="stylesheet" href="/static/css/admin.css">
+            <link rel="stylesheet" href="/static/css/footer.css">
+            <link rel="stylesheet" href="/static/css/responsive.css">
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+        </head>
+        <body>
+            <header class="site-header">
+                <a class="brand" href="/">
+                    <img src="https://summit.thehacsa.org/logo.png" alt="HACSA Foundation logo">
+                    <span>
+                        <b>SANKOFALENS</b>
+                        <small>See the past. Understand the story. Experience the culture.</small>
+                    </span>
+                </a>
+                <nav>
+                    <a href="/#discover">Home</a>
+                    <a href="/explore.html">Explore</a>
+                    <a href="/passport.html">Passport</a>
+                    <a href="/#guide">Naa</a>
+                    <a href="/login.html" id="authLink">Login</a>
+                </nav>
+            </header>
+            <main>
+                <section class="hero">
+                    <div class="hero-copy">
+                        <span class="eyebrow">HACSA@10 • HERITAGE & TOURISM</span>
+                        <h1>Turn every heritage visit into a story you can experience.</h1>
+                        <p>SankofaLens connects physical heritage places with digital stories, QR experiences, maps, multilingual learning and an AI heritage guide.</p>
+                        <div class="actions">
+                            <a class="btn primary" href="#discover">Explore heritage</a>
+                            <a class="btn ghost" href="/register.html">Create your passport</a>
+                        </div>
+                    </div>
+                    <div class="hero-card">
+                        <div class="sankofa-mark">↶</div>
+                        <h3>Discover → Explore → Scan → Listen → Ask → Learn → Remember</h3>
+                        <p>Technology serves the story.</p>
+                    </div>
+                </section>
+                <section id="discover" class="section">
+                    <div class="section-head">
+                        <div>
+                            <span class="eyebrow">DISCOVER</span>
+                            <h2>Heritage across Ghana</h2>
+                        </div>
+                        <div class="filters">
+                            <input id="search" placeholder="Search sites...">
+                            <select id="category">
+                                <option value="">All categories</option>
+                                <option>Historical Landmark</option>
+                                <option>National Heritage</option>
+                                <option>Architecture & Culture</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="siteGrid" class="grid">
+                    </div>
+                    <div id="map">
+                    </div>
+                </section>
+                <section id="guide" class="section split">
+                    <div>
+                        <span class="eyebrow">MEET NAA</span>
+                        <h2>Your AI Heritage Guide</h2>
+                        <p>Naa is designed to answer questions about places, artifacts, traditions and cultural experiences. Production responses should be grounded in verified cultural sources and clearly distinguish evidence from interpretation.</p>
+                    </div>
+                    <div class="guide-box">
+                        <div id="chatLog">
+                            <p class="naa">Naa: Ask me about a heritage site after you sign in.</p>
+                        </div>
+                        <div class="chat-row">
+                            <input id="question" placeholder="Ask Naa a question">
+                            <button class="btn primary" onclick="askNaa()">Ask</button>
+                        </div>
+                    </div>
+                </section>
+                <section id="passport" class="section passport">
+                    <div>
+                        <span class="eyebrow">CULTURAL PASSPORT</span>
+                        <h2>Collect stories, not just stamps.</h2>
+                        <p>Earn points and badges as you explore participating experiences.</p>
+                    </div>
+                    <div class="passport-card">
+                        <strong id="points">0</strong>
+                        <span>Stamps</span>
+                        <div id="badges">Sign in to view your passport.</div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <div>
+                    <b>SANKOFALENS</b>
+                    <p>See the past. Understand the story. Experience the culture.</p>
+                </div>
+                <div>
+                    <b>HACSA@10</b>
+                    <p>Heritage & Cultural Society of Africa</p>
+                    <a href="https://www.thehacsa.org/" target="_blank">Official HACSA website</a>
+                </div>
+                <div>
+                    <b>Platform</b>
+                    <p>Heritage • Tourism • Education • Innovation</p>
+                    <a href="/login.html">Sign in</a>
+                </div>
+                <div class="footer-bottom">© 2026 SankofaLens. Hackathon prototype. Built with HTML, CSS, JavaScript, FastAPI and MySQL.</div>
+            </footer>
+            <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+            </script>
+            <script type="module" src="/static/js/main.js">
+            </script>
+        </body>
+    </html>

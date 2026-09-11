@@ -1,0 +1,7 @@
+#map {
+    height:420px;
+    margin-top:32px;
+    border-radius:18px;
+    overflow:hidden;
+    border:1px solid var(--line)
+}

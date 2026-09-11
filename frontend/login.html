@@ -1,0 +1,49 @@
+<!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <title>Login | SankofaLens</title>
+            <link rel="stylesheet" href="/static/css/variables.css">
+            <link rel="stylesheet" href="/static/css/base.css">
+            <link rel="stylesheet" href="/static/css/navbar.css">
+            <link rel="stylesheet" href="/static/css/hero.css">
+            <link rel="stylesheet" href="/static/css/heritage.css">
+            <link rel="stylesheet" href="/static/css/map.css">
+            <link rel="stylesheet" href="/static/css/guide.css">
+            <link rel="stylesheet" href="/static/css/passport.css">
+            <link rel="stylesheet" href="/static/css/auth.css">
+            <link rel="stylesheet" href="/static/css/admin.css">
+            <link rel="stylesheet" href="/static/css/footer.css">
+            <link rel="stylesheet" href="/static/css/responsive.css">
+        </head>
+        <body class="auth-page">
+            <header class="site-header">
+                <a class="brand" href="/">
+                    <img src="https://summit.thehacsa.org/logo.png" alt="HACSA Foundation logo">
+                    <span>
+                        <b>SANKOFALENS</b>
+                        <small>See the past. Understand the story. Experience the culture.</small>
+                    </span>
+                </a>
+                <nav>
+                    <a href="index.html">Home</a>
+                </nav>
+            </header>
+            <main class="auth-card">
+                <img src="https://summit.thehacsa.org/logo.png" alt="HACSA logo">
+                <span class="eyebrow">SANKOFALENS</span>
+                <h1>Welcome back</h1>
+                <form id="loginForm">
+                    <input id="email" type="email" placeholder="Email" required>
+                    <input id="password" type="password" placeholder="Password" required>
+                    <button class="btn primary">Sign in</button>
+                </form>
+                <p id="msg">
+                </p>
+                <a href="register.html">Create an account</a>
+            </main>
+            <script type="module" src="/static/js/auth.js">
+            </script>
+        </body>
+    </html>

@@ -1,0 +1,10 @@
+import { loadSites } from './heritage.js';
+import { loadPassport } from './passport.js';
+import { askNaa } from './guide.js';
+import { initNavbar } from './navbar.js';
+window.askNaa=askNaa;
+document.getElementById('search')?.addEventListener('input',loadSites);
+document.getElementById('category')?.addEventListener('change',loadSites);
+initNavbar();
+loadSites();
+loadPassport();

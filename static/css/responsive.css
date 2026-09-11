@@ -1,0 +1,28 @@
+@media(max-width:850px) {
+    .hero,.split,.passport {
+        grid-template-columns:1fr
+    }
+    .grid {
+        grid-template-columns:1fr
+    }
+    .section-head {
+        align-items:stretch;
+        flex-direction:column
+    }
+    .filters {
+        flex-direction:column
+    }
+    .site-header {
+        position:relative;
+        align-items:flex-start
+    }
+    .site-header nav {
+        display:none
+    }
+    .hero {
+        padding-top:55px
+    }
+    footer {
+        grid-template-columns:1fr
+    }
+}

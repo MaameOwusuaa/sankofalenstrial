@@ -1,0 +1,29 @@
+const token=localStorage.getItem('sankofa_token');
+async function load() {
+    const dashboard=document.getElementById('dashboard');
+    const usersBox=document.getElementById('users');
+    if (!token) {
+        dashboard.innerHTML='<p>Administrator access required.</p>';
+        return
+    }
+    const h= {
+        Authorization:`Bearer ${token}`
+    };
+    const r=await fetch('/api/admin/dashboard', {
+        headers:h
+    });
+    if (r.status===401 || r.status===403) {
+        dashboard.innerHTML='<p>Administrator access required.</p>';
+        return
+    }
+    const d=await r.json();
+    dashboard.innerHTML=Object.entries(d).map(([k,v])=>`<div class="card"><div class="card-body"><span class="tag">${k}</span><h2>${v}</h2></div></div>`).join('');
+    const u=await fetch('/api/admin/users', {
+        headers:h
+    });
+    if (u.ok) {
+        const users=await u.json();
+        usersBox.innerHTML='<table><tr><th>Name</th><th>Email</th><th>Role</th></tr>'+users.map(x=>`<tr><td>${x.name}</td><td>${x.email}</td><td>${x.role}</td></tr>`).join('')+'</table>'
+    }
+}
+load();

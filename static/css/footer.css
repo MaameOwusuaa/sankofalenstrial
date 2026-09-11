@@ -1,0 +1,26 @@
+footer {
+    background:#050e1b;
+    color:#d8e4e7;
+    padding:50px 8vw 20px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    border-top:4px solid var(--teal)
+}
+
+footer b {
+    color:#fff;
+    letter-spacing:1px
+}
+
+footer a {
+    color:#7ce0ce
+}
+
+.footer-bottom {
+    grid-column:1/-1;
+    border-top:1px solid #243747;
+    padding-top:18px;
+    color:#8da0a9;
+    font-size:.85rem
+}
